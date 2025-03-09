@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     <!-- Header -->
+     <header>
+        <div class="header-content">
+            <div class="welcome-text">
+                <h1>Selamat Datang di Loker</h1>
+                <p>Temukan pekerjaan impianmu di sini! Cari lowongan sesuai keahlian dan minatmu.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#">Beranda</a>
+                <a href="#">Lowongan</a>
+                <a href="#">Kategori</a>
+            </div>
+            
+
+            <div class="nav-right">
+                <form class="login-form">
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <div class="search-section">
+            <h2 style="text-align: center;">Cari Lowongan Kerja</h2>
+            <div class="search-filters">
+                <input type="text" placeholder="Cari perusahaan...">
+                <select>
+                    <option>Semua Kategori</option>
+                    <option>IT & Software</option>
+                    <option>Game Development</option>
+                    <option>E-commerce</option>
+                    <option>Jaringan Komputer</option>
+                </select>
+                <select>
+                    <option>Semua Lokasi</option>
+                    <option>Jakarta</option>
+                    <option>Bandung</option>
+                    <option>Singapura</option>
+                    <option>Los Angeles</option>
+                </select>
+                <select>
+                    <option>Semua Jenis</option>
+                    <option>Full-time</option>
+                    <option>Part-time</option>
+                    <option>Remote</option>
+                </select>
+                <div class="salary-range">
+                    <input type="number" placeholder="Gaji minimum">
+                    <input type="number" placeholder="Gaji maksimum">
+                </div>
+            </div>
+        </div>
+
+        <div class="jobs-grid">
+            <!-- Kolom Kiri -->
+            <div class="jobs-column">
+                <!-- Biznet -->
+                <div class="job-card">
+                    <img src="../images/biznet.png" class="company-logo" alt="Biznet">
+                    <div class="job-details">
+                        <h3>Network Engineer</h3>
+                        <p class="job-category">Jaringan Komputer</p>
+                        <p class="job-location">Jakarta</p>
+                        <p class="job-type full-time">Full-time</p>
+                        <p class="job-salary">Rp10-15jt</p>
+                    </div>
+                </div>
+
+                <!-- Gojek -->
+                <div class="job-card">
+                    <img src="../images/gojek.png" class="company-logo" alt="Gojek">
+                    <div class="job-details">
+                        <h3>Mobile Developer</h3>
+                        <p class="job-category">IT & Software</p>
+                        <p class="job-location">Jakarta</p>
+                        <p class="job-type remote">Remote</p>
+                        <p class="job-salary">Rp18-25jt</p>
+                    </div>
+                </div>
+
+                <!-- Google -->
+                <div class="job-card">
+                    <img src="../images/google.png" class="company-logo" alt="Google">
+                    <div class="job-details">
+                        <h3>Machine Learning Engineer</h3>
+                        <p class="job-category">IT & Software</p>
+                        <p class="job-location">Singapura</p>
+                        <p class="job-type full-time">Full-time</p>
+                        <p class="job-salary">$8,000-$12,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan -->
+            <div class="jobs-column">
+                <!-- Riot Games -->
+                <div class="job-card">
+                    <img src="../images/riot.png" class="company-logo" alt="Riot Games">
+                    <div class="job-details">
+                        <h3>Game Developer</h3>
+                        <p class="job-category">Game Development</p>
+                        <p class="job-location">Los Angeles</p>
+                        <p class="job-type full-time">Full-time</p>
+                        <p class="job-salary">$100,000-$150,000</p>
+                    </div>
+                </div>
+
+                <!-- Shopee -->
+                <div class="job-card">
+                    <img src="../images/shopee.png" class="company-logo" alt="Shopee">
+                    <div class="job-details">
+                        <h3>E-commerce Specialist</h3>
+                        <p class="job-category">E-commerce</p>
+                        <p class="job-location">Jakarta</p>
+                        <p class="job-type part-time">Part-time</p>
+                        <p class="job-salary">Rp8-12jt</p>
+                    </div>
+                </div>
+
+                <!-- Steam (Valve) -->
+                <div class="job-card">
+                    <img src="../images/steam.png" class="company-logo" alt="Steam">
+                    <div class="job-details">
+                        <h3>Software Engineer</h3>
+                        <p class="job-category">IT & Software</p>
+                        <p class="job-location">Seattle</p>
+                        <p class="job-type remote">Remote</p>
+                        <p class="job-salary">$120,000-$160,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Kenya Syalwa Arifia - Nicolas Krisna - Karol Wojtyfa - All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
