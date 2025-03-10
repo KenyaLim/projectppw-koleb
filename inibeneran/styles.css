@@ -1,0 +1,196 @@
+
+/* Login Container Styles */
+.login-container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border: 3px solid #6A9C89;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px C1D8C3(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #6A9C89;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6A9C89;
+}
+
+.login-container input {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #6A9C89;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFA725;
+    color: #FBEAE7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: gray;
+}
+
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C1D8C3;
+    color: black;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #FFA725;
+    color: #FFF5E4;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav {
+    background-color: #6A9C89;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FBEAE7;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Home Page Styles */
+.search-filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search-filters input, .search-filters select {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.search-filters button {
+    padding: 8px 15px;
+    background-color: #FFA725;
+    color: #FBEAE7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-filters button:hover {
+    background-color: gray;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-listing {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border: 1px solid #B2456E;
+    border-radius: 4px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Detail Page Styles */
+.detail-container {
+    display: flex;
+    gap: 20px;
+}
+
+.detail-main {
+    flex: 2;
+}
+
+.detail-sidebar {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border: 1px solid #B2456E;
+    border-radius: 4px;
+}
+
+.detail-sidebar img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Application Page Styles */
+.application-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.application-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.application-form input, .application-form textarea, .application-form select, .application-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #552619;
+    border-radius: 4px;
+}
+
+.application-form button {
+    background-color: #B2456E;
+    color: #FBEAE7;
+    cursor: pointer;
+}
+
+.application-form button:hover {
+    background-color: #552619;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+}

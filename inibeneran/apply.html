@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Lamaran - Project PPW Koleb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pengajuan Lamaran</h1>
+    </header>
+    <nav>
+        <a href="index.html">Kembali ke Halaman Utama</a>
+    </nav>
+    <div class="container">
+        <div class="application-form">
+            <h2>Frontend Developer - Tech Corp</h2>
+            <form id="applicationForm">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="birthdate">Tanggal Lahir:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Nomor HP:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="cv">Upload CV (PDF):</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+                <label for="portfolio">Upload Portofolio (PDF, opsional):</label>
+                <input type="file" id="portfolio" name="portfolio" accept=".pdf">
+
+                <label for="coverletter">Surat Lamaran (opsional):</label>
+                <textarea id="coverletter" name="coverletter" rows="5"></textarea>
+
+                <button type="submit">Ajukan Lamaran</button>
+            </form>
+            <p id="successMessage" style="display: none; color: green;">Lamaran berhasil dikirim!</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Project PPW Koleb</p>
+    </footer>
+    <script>
+        document.getElementById('applicationForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

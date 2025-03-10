@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama - Project PPW Koleb</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project PPW Koleb</h1>
+    </header>
+    <nav>
+        <a href="index.html">Halaman Utama</a>
+        <a href="detail.html">Detail Lowongan</a>
+        <a href="apply.html">Pengajuan Lamaran</a>
+    </nav>
+    <!-- Form Login -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage" style="display: none; color: green;">Login berhasil!</p>
+    </div>
+    <div class="container">
+        <div class="search-filters">
+            <input type="text" placeholder="Cari perusahaan...">
+            <select>
+                <option>Kategori Perusahaan</option>
+                <option>IT</option>
+                <option>Keuangan</option>
+                <option>Pendidikan</option>
+            </select>
+            <input type="text" placeholder="Lokasi">
+            <select>
+                <option>Jenis Pekerjaan</option>
+                <option>Full-time</option>
+                <option>Part-time</option>
+                <option>Remote</option>
+                <option>Freelance</option>
+            </select>
+            <input type="text" placeholder="Rentang Gaji">
+            <button>Cari</button>
+        </div>
+        <div class="job-listings">
+            <div class="job-listing">
+                <img src="https://via.placeholder.com/100" alt="Logo Perusahaan">
+                <h3>Frontend Developer</h3>
+                <p><strong>Perusahaan:</strong> Tech Corp</p>
+                <p><strong>Kategori:</strong> IT</p>
+                <p><strong>Jenis Pekerjaan:</strong> Full-time</p>
+                <p><strong>Gaji:</strong> Rp 10.000.000 - Rp 15.000.000</p>
+                <a href="detail.html">Lihat Detail</a>
+            </div>
+            <div class="job-listing">
+                <img src="https://via.placeholder.com/100" alt="Logo Perusahaan">
+                <h3>Backend Developer</h3>
+                <p><strong>Perusahaan:</strong> Finance Inc</p>
+                <p><strong>Kategori:</strong> Keuangan</p>
+                <p><strong>Jenis Pekerjaan:</strong> Part-time</p>
+                <p><strong>Gaji:</strong> Rp 8.000.000 - Rp 12.000.000</p>
+                <a href="detail.html">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Project PPW Koleb</p>
+    </footer>
+    <script>
+        // Script untuk menangani login
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('loginMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
