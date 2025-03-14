@@ -12,10 +12,13 @@
     </header>
     <nav>
         <a href="index.html">HOME</a>
+        <a href="detail.html">DETAIL</a>
+        <a href="apply.html">APPLY</a>
     </nav>
+    
     <div class="container">
         <div class="application-form">
-            <form id="applicationForm">
+            <form id="applicationForm" action="#success">
                 <label for="fullname">Nama Lengkap:</label>
                 <input type="text" id="fullname" name="fullname" required>
 
@@ -37,8 +40,12 @@
                 <label for="coverletter">Surat Lamaran (opsional):</label>
                 <input type="file" id="portfolio" name="portfolio">
 
-                <button type="submit">Ajukan Lamaran</button>
+                <button type="submit" class="button">Ajukan Lamaran</button>
+                
             </form>
+                <div id="success" class="message">
+                    ✅ Berhasil melamar lowongan
+                </div>
         </div>
     </div>
     <footer>
