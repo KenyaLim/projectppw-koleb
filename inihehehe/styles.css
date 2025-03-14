@@ -8,6 +8,8 @@
     border-radius: 4px;
     box-shadow: 0 2px 4px C1D8C3(0, 0, 0, 0.1);
     text-align: center;
+    float: right;
+    /* position: fixed; */
 }
 
 .login-container h2 {
@@ -84,6 +86,7 @@ nav a:hover {
 
 .container {
     padding: 20px;
+    /* float: left; */
 }
 
 /* HOME PAGE*/
@@ -136,6 +139,8 @@ nav a:hover {
     align-items: center;
     gap: 20px;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin-right: 45px;
+    margin-left: 45px;
 }
 
 .job-card:hover {
@@ -176,29 +181,79 @@ nav a:hover {
     background-color: #e3f2fd;
     color: #2196f3;
 }
+
+.shibal {
+    background-color: #fff3e0;
+    color: red;
+}
+
+
+.job-salary {
+    font-weight: 500;
+    color: #2e7d32;
+}
+
  
 /* DETAIL PAGE */
-.detail-container {
-    /* display: flex; */
-    gap: 20px;
+/* Tambahan CSS untuk detail page */
+.detail-card {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-logo {
+    max-width: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.job-description,
+.job-requirements {
+    margin: 15px 0;
+}
+
+.job-description h4,
+.job-requirements h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+/* .jobs-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobs-column {
+    width: 48%;
 }
 
 .detail-main {
-    flex: 2;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.detail-sidebar {
-    flex: 1;
-    background-color: #FFFFFF;
-    padding: 15px;
-    border: 1px solid #6A9C89;
-    border-radius: 4px;
-}
+.detail-main img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100px;
+} */
 
-.detail-sidebar img {
-    max-width: 100%;
-    margin-bottom: 15px;
-}
 
 /* APPLY PAGE */
 .application-form {
