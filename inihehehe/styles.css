@@ -1,5 +1,5 @@
 
-/* Login Container Styles */
+/* LOGIN */
 .login-container {
     background-color: #FFFFFF;
     padding: 20px;
@@ -87,7 +87,7 @@ nav a:hover {
     padding: 20px;
 }
 
-/* Home Page Styles */
+/* HOME PAGE*/
 .search-filters {
     margin-bottom: 20px;
     display: flex;
@@ -125,7 +125,7 @@ nav a:hover {
 .job-listing {
     background-color: #FFFFFF;
     padding: 15px;
-    border: 1px solid #B2456E;
+    border: 1px solid #6A9C89;
     border-radius: 4px;
     width: calc(33.333% - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -137,7 +137,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* Detail Page Styles */
+/* DETAIL PAGE */
 .detail-container {
     display: flex;
     gap: 20px;
@@ -151,7 +151,7 @@ nav a:hover {
     flex: 1;
     background-color: #FFFFFF;
     padding: 15px;
-    border: 1px solid #B2456E;
+    border: 1px solid #6A9C89;
     border-radius: 4px;
 }
 
@@ -160,7 +160,7 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* Application Page Styles */
+/* APPLY PAGE */
 .application-form {
     max-width: 600px;
     margin: 0 auto;
@@ -181,7 +181,7 @@ nav a:hover {
 }
 
 .application-form button {
-    background-color: #B2456E;
+    background-color: #6A9C89;
     color: #FBEAE7;
     cursor: pointer;
 }
@@ -190,7 +190,7 @@ nav a:hover {
     background-color: #552619;
 }
 
-/* Footer Styles */
+/* FOOTERR */
 footer {
     margin-top: 20px;
 }
