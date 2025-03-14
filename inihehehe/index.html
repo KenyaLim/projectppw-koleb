@@ -28,7 +28,6 @@
 
             <button type="submit">Login</button>
         </form>
-        <p id="loginMessage" style="display: none; color: green;">Login berhasil!</p>
     </div>
 
     <div class="container">
@@ -36,8 +35,7 @@
             <input type="text" placeholder="Cari perusahaan...">
             <select>
                 <option>Kategori Perusahaan</option>
-                <option>IT</option>
-                <option>Keuangan</option>
+                <option>Pelayanan</option>
                 <option>Pendidikan</option>
             </select>
             <input type="text" placeholder="Lokasi">
@@ -58,80 +56,57 @@
         <div class="jobs-grid">
             <!-- Kolom Kiri -->
             <div class="jobs-column">
-                <!-- Biznet -->
+                <!-- bimbel -->
                 <div class="job-card">
-                    <img src="../images/biznet.png" class="company-logo" alt="Biznet">
+                    <img src="/GAMBAR/bimbel.png" class="company-logo" alt="bimbel">
                     <div class="job-details">
-                        <h3>Network Engineer</h3>
-                        <p class="job-category">Jaringan Komputer</p>
-                        <p class="job-location">Jakarta</p>
+                        <h3>Mentor Matematika Bimbel Biba</h3>
+                        <p class="job-category">Pendidikan</p>
+                        <p class="job-location">Tangerang</p>
                         <p class="job-type full-time">Full-time</p>
-                        <p class="job-salary">Rp10-15jt</p>
+                        <p class="tes">Rp 2.7-3jt/bulan</p>
                     </div>
                 </div>
 
-                <!-- Gojek -->
+                <!-- meals only -->
                 <div class="job-card">
-                    <img src="../images/gojek.png" class="company-logo" alt="Gojek">
+                    <img src="/GAMBAR/meals-only.png" class="company-logo" alt="meals-only">
                     <div class="job-details">
-                        <h3>Mobile Developer</h3>
-                        <p class="job-category">IT & Software</p>
-                        <p class="job-location">Jakarta</p>
-                        <p class="job-type remote">Remote</p>
-                        <p class="job-salary">Rp18-25jt</p>
-                    </div>
-                </div>
-
-                <!-- Google -->
-                <div class="job-card">
-                    <img src="../images/google.png" class="company-logo" alt="Google">
-                    <div class="job-details">
-                        <h3>Machine Learning Engineer</h3>
-                        <p class="job-category">IT & Software</p>
-                        <p class="job-location">Singapura</p>
-                        <p class="job-type full-time">Full-time</p>
-                        <p class="job-salary">$8,000-$12,000</p>
+                        <h3>Crew Outlet</h3>
+                        <p class="job-category">Pelayanan</p>
+                        <p class="job-location">Yogyakarta</p>
+                        <p class="job-type part-time">Part-time</p>
+                        <p class="job-salary">Rp1.5-2jt/bulan</p>
                     </div>
                 </div>
             </div>
 
             <!-- Kolom Kanan -->
             <div class="jobs-column">
-                <!-- Riot Games -->
+                <!-- mie goceng -->
                 <div class="job-card">
-                    <img src="../images/riot.png" class="company-logo" alt="Riot Games">
+                    <img src="/GAMBAR/mi-goceng.png" class="company-logo" alt="mi-goceng">
                     <div class="job-details">
-                        <h3>Game Developer</h3>
-                        <p class="job-category">Game Development</p>
-                        <p class="job-location">Los Angeles</p>
+                        <h3>Crew Outlet</h3>
+                        <p class="job-category">Pelayanan</p>
+                        <p class="job-location">Yogyakarta</p>
                         <p class="job-type full-time">Full-time</p>
-                        <p class="job-salary">$100,000-$150,000</p>
+                        <p class="job-salary">Rp1.7-2jt/bulan</p>
                     </div>
                 </div>
 
-                <!-- Shopee -->
+                <!-- tianwaa -->
                 <div class="job-card">
-                    <img src="../images/shopee.png" class="company-logo" alt="Shopee">
+                    <img src="/GAMBAR/tianwaa.png" class="company-logo" alt="tianwaa">
                     <div class="job-details">
-                        <h3>E-commerce Specialist</h3>
-                        <p class="job-category">E-commerce</p>
+                        <h3>Mandarin Teacher</h3>
+                        <p class="job-category">Pendidikan</p>
                         <p class="job-location">Jakarta</p>
-                        <p class="job-type part-time">Part-time</p>
-                        <p class="job-salary">Rp8-12jt</p>
+                        <p class="job-type full-time">Full-time</p>
+                        <p class="job-salary">Rp3-4jt</p>
                     </div>
                 </div>
 
-                <!-- Steam (Valve) -->
-                <div class="job-card">
-                    <img src="../images/steam.png" class="company-logo" alt="Steam">
-                    <div class="job-details">
-                        <h3>Software Engineer</h3>
-                        <p class="job-category">IT & Software</p>
-                        <p class="job-location">Seattle</p>
-                        <p class="job-type remote">Remote</p>
-                        <p class="job-salary">$120,000-$160,000</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -139,14 +114,7 @@
 
     </div>
     <footer>
-        <p>&copy; 2023 Project PPW Koleb</p>
+        <p>&copy; Kenya - Karol - Nico</p>
     </footer>
-    <script>
-        // Script untuk menangani login
-        document.getElementById('loginForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            document.getElementById('loginMessage').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
