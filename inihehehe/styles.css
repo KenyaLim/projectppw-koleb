@@ -71,20 +71,13 @@ header h1, footer p {
 
 /* NAVIGATION BAR GACOR */
 
-/* nav {
-    background-color: #6A9C89;
-    padding: 10px;
-    text-align: center;
-} */
 nav {
     background-color: #6A9C89;
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     position: sticky;
-    width: 100%;
     top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -181,22 +174,20 @@ nav a:hover::before {
 
 .job-card {
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     align-items: center;
     gap: 20px;
     transition: transform 0.2s, box-shadow 0.2s;
-    margin-right: 45px;
-    margin-left: 45px;
-}
-
-.job-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .company-logo {
+    float: left;
+    margin: 20px;
+    padding: 10px;
     width: 80px;
     height: 80px;
     object-fit: contain;
@@ -235,9 +226,8 @@ nav a:hover::before {
     color: red;
 }
 
-
 .job-salary {
-    font-weight: 500;
+    font-weight: bold;
     color: #2e7d32;
 }
 
