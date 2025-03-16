@@ -15,28 +15,26 @@
 
 .login-container h2 {
     margin-bottom: 20px;
-    color: #6A9C89;
+    color: #1E2A5E;
 }
 
 .login-container label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #6A9C89;
 }
 
 .login-container input {
     width: 50%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #6A9C89;
     border-radius: 4px;
 }
 
 .login-container button {
     width: 100%;
     padding: 10px;
-    background-color: #FFA725;
+    background-color: #55679C;
     color: #FBEAE7;
     border: none;
     border-radius: 4px;
@@ -53,14 +51,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #C1D8C3;
+    background-color: #E1D7B7;
     color: black;
     line-height: 1.6;
 }
 
 header, footer {
-    background-color: #FFA725;
-    color: #FFF5E4;
+    background-color: #7C93C3;
+    color: white;
     text-align: center;
     padding: 10px 0;
 }
@@ -72,7 +70,7 @@ header h1, footer p {
 /* NAVIGATION BAR GACOR */
 
 nav {
-    background-color: #6A9C89;
+    background-color: #1E2A5E;
     padding: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -107,25 +105,6 @@ nav a:hover::before {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        padding: 1rem;
-        position: relative;
-    }
-    
-    nav a {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-
-
-
 
 
 /* HOME PAGE*/
@@ -147,7 +126,7 @@ nav a:hover::before {
 
 .search-filters button {
     padding: 8px 15px;
-    background-color: #FFA725;
+    background-color: #55679C;
     color: #FBEAE7;
     border: none;
     border-radius: 4px;
@@ -167,19 +146,15 @@ nav a:hover::before {
 }
 
 .jobs-column {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 20px;
 }
 
 .job-card {
     background-color: white;
-    padding: 30px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    align-items: center;
-    gap: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -234,8 +209,9 @@ nav a:hover::before {
  
 /* DETAIL PAGE */
 /* Tambahan CSS untuk detail page */
+
 .detail-card {
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 30px;
 }
 
@@ -259,7 +235,7 @@ nav a:hover::before {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6A9C89;
+    background-color: #55679C;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -291,14 +267,10 @@ nav a:hover::before {
 }
 
 .application-form button {
-    background-color: #6A9C89;
+    background-color: #55679C;
     color: #FBEAE7;
     cursor: pointer;
 }
-
-/* .application-form button:hover {
-    background-color: #552619;
-} */
 
 /* messagenya */
 
@@ -318,4 +290,5 @@ nav a:hover::before {
 /* FOOTERR */
 footer {
     margin-top: 20px;
+    font-weight: bold;
 }
