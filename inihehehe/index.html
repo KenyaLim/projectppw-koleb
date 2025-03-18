@@ -8,16 +8,65 @@
 </head>
 <body>
     <header>
-        <h1>LoKerID</h1>
+        <div class="header-content">
+            <img src="../GAMBAR/logo.png" alt="LoKerID Logo" class="header-logo">
+            <h1>LoKerID</h1>
+        </div>
     </header>
+
     <nav>
         <a href="index.html">HOME</a>
         <a href="detail.html">DETAIL</a>
         <a href="apply.html">APPLY</a>
+        <a href="#login" class="login-link">LOGIN</a> 
     </nav>
 
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h2>Cari Kerja #MakinMudah</h2>
+            <p>Pake LoKerID</p>
+            
+            <div class="search-container">
+                <input type="text" placeholder="Masukkan kata kunci">
+                <input type="text" placeholder="Cari lokasi">
+                <button>Cari</button>
+            </div>
+        </div>
+    
+        <!-- Kategori Populer -->
+        <div class="popular-categories">
+            <h3>Paling sering dicari:</h3>
+            <div class="category-tags">
+                <span>Staff Admin</span>
+                <span>Driver</span>
+                <span>IT Support</span>
+                <span>Staff Accounting</span>
+                <span>Content Creator</span>
+                <span>Sales</span>
+                <span>Digital Marketing</span>
+                <span>Desain Grafis</span>
+            </div>
+        </div>
+    
+        <!-- Lowongan Terpopuler -->
+        <div class="popular-jobs">
+            <div class="popular-header">
+                <h2>Lowongan Kerja Terpopuler</h2>
+                <div class="job-count">
+                    <span>100rb++</span>
+                    <span>Loker Tersedia</span>
+                </div>
+            </div>
+            
+            <!-- Tambahkan kategori filter di sini jika perlu -->
+        </div>
+    
+        <!-- Job Grid (existing content tetap dipertahankan) -->
+    </div>
+
     <!-- Form Login -->
-    <div class="login-container">
+    <!-- <div class="login-container">
         <h2>Login</h2>
         <form id="loginForm">
             <label for="username">Username:</label>
@@ -28,7 +77,7 @@
 
             <button type="submit">Login</button>
         </form>
-    </div>
+    </div> -->
 
     <div class="container">
         <div class="search-filters">
@@ -56,7 +105,7 @@
             <div class="jobs-column">
                 <!-- bimbel -->
                 <div class="job-card">
-                    <img src="/GAMBAR/bimbel.png" class="company-logo" alt="bimbel">
+                    <img src="../GAMBAR/bimbel.png" class="company-logo" alt="bimbel">
                     <div class="job-details">
                         <h3>Mentor Matematika Bimbel Biba</h3>
                         <p class="job-category">Pendidikan</p>
@@ -69,7 +118,7 @@
 
                 <!-- meals only -->
                 <div class="job-card">
-                    <img src="/GAMBAR/meals-only.png" class="company-logo" alt="meals-only">
+                    <img src="../GAMBAR/meals-only.png" class="company-logo" alt="meals-only">
                     <div class="job-details">
                         <h3>Crew Outlet</h3>
                         <p class="job-category">Pelayanan</p>
@@ -85,7 +134,7 @@
             <div class="jobs-column">
                 <!-- mie goceng -->
                 <div class="job-card">
-                    <img src="/GAMBAR/mi-goceng.png" class="company-logo" alt="mi-goceng">
+                    <img src="../GAMBAR/mi-goceng.png" class="company-logo" alt="mi-goceng">
                     <div class="job-details">
                         <h3>Crew Outlet</h3>
                         <p class="job-category">Pelayanan</p>
@@ -98,7 +147,7 @@
 
                 <!-- tianwaa -->
                 <div class="job-card">
-                    <img src="/GAMBAR/tianwaa.png" class="company-logo" alt="tianwaa">
+                    <img src="../GAMBAR/tianwaa.png" class="company-logo" alt="tianwaa">
                     <div class="job-details">
                         <h3>Mandarin Teacher</h3>
                         <p class="job-category">Pendidikan</p>
@@ -113,6 +162,22 @@
         </div>
     </div>
 
+    <!-- Modal Login -->
+    <div id="login" class="login-modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+                <a href="#" class="close">Tutup</a>
+            </form>
+        </div>
+    </div>
 
     </div>
     <footer>
