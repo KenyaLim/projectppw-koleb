@@ -1,0 +1,336 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E1D7B7;
+    color: black;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px 20px;
+}
+
+.button {
+    background: #6A9C89;
+}
+header, footer {
+    background-color: #7C93C3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #1E2A5E;
+}
+
+.header-logo {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-right: 20px;
+}
+
+/* NAVIGATION BAR GACOR */
+
+
+nav {
+    background-color: #1E2A5E;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+
+.search-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px;
+  background-color:#E1D7B7;
+  border-radius: 15px;
+}
+
+.search-intro h2 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+  font-size: 2.2em;
+}
+
+.search-intro p {
+  color: #5a5a5a;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+/* SERCH FILTER */
+.search-filters {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.search-filters input,
+.search-filters select {
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.search-filters input:focus,
+.search-filters select:focus {
+    border-color:#7C93C3;
+    outline: none;
+}
+
+.search-filters button {
+    background-color:  #55679C;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.search-filters button:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* HOME PAGE*/
+
+
+/* JOB LISTING RRRRRRRRRRRRRAAAAAAAAH */
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.jobs-column {
+    display: grid;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.company-logo {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.job-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.job-details p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.job-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.full-time {
+    background-color: #e3f2fd;
+    color: #2196f3;
+    justify-content: center;
+}
+
+.shibal {
+    background-color: #fff3e0;
+    color: red;
+    justify-content: center;
+}
+
+.job-salary {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+ 
+/* DETAIL PAGE */
+/* Tambahan CSS untuk detail page */
+
+.detail-card {
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.detail-logo {
+    max-width: 150px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.job-description,
+.job-requirements {
+    margin: 15px 0;
+}
+
+.job-description h4,
+.job-requirements h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #55679C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+/* APPLY PAGE */
+.application-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.application-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.application-form input, .application-form textarea, .application-form select, .application-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #552619;
+    border-radius: 4px;
+}
+
+.application-form button {
+    background-color: #55679C;
+    color: #FBEAE7;
+    cursor: pointer;
+}
+
+/* messagenya */
+
+.message {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+#success:target {
+    display: block;
+}
+
+/* FOOTERR */
+
+footer {
+  background: #1E2A5E;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  border-top: 2px solid #7C93C3;
+}
+
+.footer-brand {
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-brand img {
+  width: 80px;
+  height: 80px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand h3 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: white;
+}
+
