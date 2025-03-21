@@ -54,7 +54,66 @@ footer p {
 
 /* NAVIGATION BAR GACOR */
 
+nav {
+  position: sticky;
+  background: #1E2A5E;
+  padding: 12px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav-left {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-left a:hover {
+  color: #7C93C3;
+}
+
+.login-btn {
+  background: #7C93C3;
+  color: white !important;
+  padding: 8px 25px;
+  border-radius: 20px;
+  margin-left: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #55679C;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column;
+      gap: 15px;
+      padding: 15px 20px;
+  }
+  
+  .nav-left {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+  }
+  
+  .nav-right {
+      margin-top: 10px;
+  }
+}
+
+/* 
 nav {
     background-color: #1E2A5E;
     padding: 15px;
@@ -78,8 +137,7 @@ nav a {
     text-transform: uppercase;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
-}
-
+} */
 
 .search-intro {
   text-align: center;
