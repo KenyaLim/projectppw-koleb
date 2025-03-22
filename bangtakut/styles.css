@@ -76,24 +76,9 @@ nav a {
 }
 
 .nav-left a:hover {
-  color: #7C93C3;
+  font-weight: bolder;
 }
 
-.login-btn {
-  background: #7C93C3;
-  color: white !important;
-  padding: 8px 25px;
-  border-radius: 20px;
-  margin-left: 15px;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-.login-btn:hover {
-  background: #55679C;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
 
 @media (max-width: 768px) {
   nav {
