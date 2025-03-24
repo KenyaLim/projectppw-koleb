@@ -11,6 +11,8 @@ body {
     max-width: 1200px;
     margin: 30px auto;
     padding: 10px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .button {
@@ -124,13 +126,32 @@ nav {
 
 /* end of nav */
 
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    height: auto;
+}
 
 .role-selector {
-    background: linear-gradient(135deg, white 10%, #55679C 100%);
+    background: white;
     border-radius: 20px;
     padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.role-cards {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
+    margin-top: 2rem;
+    flex-grow: 1;
 }
 
 .role-card {
@@ -142,11 +163,12 @@ nav {
     color: white;
     position: relative;
     overflow: hidden;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 200px;
+    min-height: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .role-card.applicant {
@@ -157,10 +179,41 @@ nav {
     background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
 }
 
+.role-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.role-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    z-index: 1;
+}
+
 .role-content {
     position: relative;
     z-index: 2;
     text-align: center;
+    width: 100%;
+}
+
+.role-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.role-content p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .login-form {
@@ -197,83 +250,23 @@ input:focus {
     outline: none;
 }
 
-
 /* YES */
 
-/* .search-intro {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 30px;
-  background-color:#E1D7B7;
-  border-radius: 15px;
-}
-
-.search-intro h1 {
-    color: white;
-    font-size: 2em;
-    text-shadow: 1px 1px 2px #1E2A5E;
-}
-
-.search-intro p {
-    color: white;
-    font-style: italic;
-} */
-
-
-/* SERCH FILTER */
-.search-filters {
-    background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.search-filters input,
-.search-filters select {
-    padding: 12px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1em;
-    transition: border-color 0.3s;
-}
-
-.search-filters input:focus,
-.search-filters select:focus {
-    border-color:#7C93C3;
-    outline: none;
-}
-
-.search-filters button {
-    background-color:  #55679C;
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.search-filters button:hover {
-    background-color: var(--dark-blue);
-    transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-}
-
-/* HOME PAGE*/
-
-
 /* JOB LISTING RRRRRRRRRRRRRAAAAAAAAH */
+
+.jobs-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
 .jobs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .jobs-column {
@@ -288,6 +281,8 @@ input:focus {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-right: 20px;
     margin-left: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .company-logo {
@@ -339,7 +334,6 @@ input:focus {
     color: #2e7d32;
 }
 
- 
 /* DETAIL PAGE */
 /* Tambahan CSS untuk detail page */
 
@@ -450,5 +444,142 @@ footer {
   font-weight: 600;
   letter-spacing: 1px;
   color: white;
+}
+
+.search-filters {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.search-filters h3 {
+    color: #1E2A5E;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.filter-section {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filter-section h4 {
+    color: #333;
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #333;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 0.8em;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s;
+    font-size: 0.9em;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #7C93C3;
+}
+
+.apply-filters {
+    width: 100%;
+    background-color: #55679C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+.apply-filters:hover {
+    background-color: #1E2A5E;
+}
+
+@media (max-width: 1024px) {
+    .jobs-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .search-filters {
+        position: static;
+        max-width: 600px;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-filters {
+        padding: 15px;
+        margin: 1.5rem auto;
+    }
+}
+
+.role-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.role-header h1 {
+    color: #1E2A5E;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.role-header p {
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
