@@ -55,76 +55,152 @@ footer p {
 /* NAVIGATION BAR GACOR */
 
 nav {
-  position: sticky;
-  background: #1E2A5E;
-  padding: 12px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-left {
-  display: flex;
-  gap: 25px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.2s ease;
-}
-
-.nav-left a:hover {
-  font-weight: bolder;
-}
-
-
-@media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      gap: 15px;
-      padding: 15px 20px;
-  }
-  
-  .nav-left {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-  }
-  
-  .nav-right {
-      margin-top: 10px;
-  }
-}
-
-/* 
-nav {
-    background-color: #1E2A5E;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    font-family: 'Segoe UI', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E2A5E;
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-nav a {
+.nav-left, .nav-right {
+    display: flex;
+}
+.nav-left a, .nav-right a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-} */
+    font-size: 18px;
+    margin: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+.nav-left a:hover, .nav-right a:hover {
+    font-weight: bold;
+    color: white;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 350px;
+}
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #1E2A5E;
+}
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.login-box input:focus {
+    border-color: #1E2A5E;
+    outline: none;
+}
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #1E2A5E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.login-box button:hover {
+    background: #16204b;
+    color: white;
+}
 
-.search-intro {
+/* end of nav */
+
+
+.role-selector {
+    background: linear-gradient(135deg, white 10%, #55679C 100%);
+    border-radius: 20px;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.role-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.role-card.applicant {
+    background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+.role-card.recruiter {
+    background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+}
+
+.role-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.login-form {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #667eea;
+    outline: none;
+}
+
+
+/* YES */
+
+/* .search-intro {
   text-align: center;
   margin-bottom: 40px;
   padding: 30px;
@@ -132,17 +208,16 @@ nav a {
   border-radius: 15px;
 }
 
-.search-intro h2 {
-  color: var(--dark-blue);
-  margin-bottom: 15px;
-  font-size: 2.2em;
+.search-intro h1 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #1E2A5E;
 }
 
 .search-intro p {
-  color: #5a5a5a;
-  font-size: 1.1em;
-  line-height: 1.6;
-}
+    color: white;
+    font-style: italic;
+} */
 
 
 /* SERCH FILTER */
