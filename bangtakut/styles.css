@@ -13,6 +13,8 @@ body {
     padding: 10px 20px;
     position: relative;
     z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .button {
@@ -82,46 +84,122 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: calc(100vh - 300px);
+    padding: 2rem 0;
 }
 .login-box {
     background: white;
-    padding: 40px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-    max-width: 350px;
 }
 .login-box h2 {
-    margin-bottom: 20px;
+    color: #1E2A5E;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.login-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.login-form {
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.form-group input:focus {
+    border-color: #7C93C3;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(124, 147, 195, 0.1);
+}
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+.remember-me input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #7C93C3;
+}
+.forgot-password {
+    color: #7C93C3;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.forgot-password:hover {
     color: #1E2A5E;
 }
-.login-box input {
+.login-button {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-.login-box input:focus {
-    border-color: #1E2A5E;
-    outline: none;
-}
-.login-box button {
-    width: 100%;
-    padding: 12px;
-    background: #1E2A5E;
+    background-color: #7C93C3;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
 }
-.login-box button:hover {
-    background: #16204b;
-    color: white;
+.login-button:hover {
+    background-color: #1E2A5E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.register-link {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+}
+.register-link a {
+    color: #7C93C3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.register-link a:hover {
+    color: #1E2A5E;
+}
+@media (max-width: 480px) {
+    .login-box {
+        padding: 2rem;
+    }
+    .form-options {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
 }
 
 /* end of nav */
@@ -132,6 +210,7 @@ nav {
     gap: 2rem;
     margin-bottom: 2rem;
     height: auto;
+    width: 100%;
 }
 
 .role-selector {
@@ -144,14 +223,15 @@ nav {
     flex-direction: column;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .role-cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-top: 2rem;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .role-card {
@@ -216,40 +296,6 @@ nav {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-.login-form {
-    padding: 4rem;
-    display: flex;
-    align-items: center;
-}
-
-form {
-    width: 100%;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #2d3748;
-    font-weight: 500;
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #e2e8f0;
-    border-radius: 8px;
-    transition: border-color 0.3s;
-}
-
-input:focus {
-    border-color: #667eea;
-    outline: none;
-}
-
 /* YES */
 
 /* JOB LISTING RRRRRRRRRRRRRAAAAAAAAH */
@@ -259,6 +305,8 @@ input:focus {
     grid-template-columns: 1fr 300px;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .jobs-grid {
@@ -267,11 +315,13 @@ input:focus {
     gap: 20px;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .jobs-column {
     display: grid;
     gap: 20px;
+    width: 100%;
 }
 
 .job-card {
@@ -279,10 +329,12 @@ input:focus {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0;
+    margin-left: 0;
     position: relative;
     z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .company-logo {
@@ -454,6 +506,8 @@ footer {
     height: fit-content;
     position: sticky;
     top: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .search-filters h3 {
@@ -555,6 +609,10 @@ footer {
 
 @media (max-width: 768px) {
     .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .role-cards {
         grid-template-columns: 1fr;
     }
 
