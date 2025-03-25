@@ -1,0 +1,203 @@
+PEMETAAN KONSEP IMC DALAM ELEMEN HTML:
+
+1. KONSISTENSI (Consistency)
+- Header yang konsisten di semua halaman:
+  <header>
+    <div class="header-content">
+      <img src="../GAMBAR/logo.png" alt="LoKerID Logo" class="header-logo">
+      <h1>LoKerID</h1>
+    </div>
+  </header>
+- Navigasi yang konsisten:
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">HOME</a>
+      <a href="detail.html">DETAIL</a>
+      <a href="apply.html">APPLY</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html">LOGIN</a>
+      <a href="daftar.html">DAFTAR</a>
+    </div>
+  </nav>
+
+2. VISIBILITAS (Visibility)
+- Informasi status pekerjaan yang jelas:
+  <p class="job-type full-time">Full-time</p>
+  <p class="job-type shibal">Part-time</p>
+- Logo dan branding yang terlihat:
+  <img src="../GAMBAR/logo.png" alt="LoKerID Logo" class="header-logo">
+
+3. FEEDBACK (Feedback)
+- Form input dengan visual feedback:
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" required>
+  </div>
+- Tombol dengan efek hover:
+  <a href="detail.html" class="button">Detail</a>
+
+4. AFFORDANCE
+- Card job yang terlihat bisa diinteraksi:
+  <div class="job-card">
+    <img src="../GAMBAR/bimbel.png" class="company-logo" alt="bimbel">
+    <div class="job-details">
+      <h3>Mentor Matematika Bimbel Biba</h3>
+      <!-- ... -->
+    </div>
+  </div>
+- Filter yang terlihat bisa diatur:
+  <div class="filter-section">
+    <h4>Kategori Perusahaan</h4>
+    <select class="filter-select">
+      <!-- ... -->
+    </select>
+  </div>
+
+5. MAPPING
+- Pengelompokan informasi yang logis:
+  <div class="jobs-layout">
+    <div class="jobs-grid">
+      <div class="jobs-column">
+        <!-- Job cards -->
+      </div>
+    </div>
+    <div class="search-filters">
+      <!-- Filters -->
+    </div>
+  </div>
+
+6. CONSTRAINT
+- Form dengan validasi:
+  <form class="login-form">
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" required>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" required>
+    </div>
+  </form>
+- Pilihan terbatas pada filter:
+  <select class="filter-select">
+    <option value="">Semua Kategori</option>
+    <option value="pelayanan">Pelayanan</option>
+    <option value="pendidikan">Pendidikan</option>
+    <!-- ... -->
+  </select>
+
+7. ERROR PREVENTION
+- Form dengan label yang jelas:
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" required>
+  </div>
+- Konfirmasi aksi:
+  <button class="apply-filters">Terapkan Filter</button>
+
+8. RECOGNITION RATHER THAN RECALL
+- Menu yang selalu terlihat:
+  <nav>
+    <!-- Navigation items -->
+  </nav>
+- Informasi yang selalu tersedia:
+  <div class="job-details">
+    <h3>Mentor Matematika Bimbel Biba</h3>
+    <p class="job-category">Pendidikan</p>
+    <p class="job-location">Tangerang</p>
+    <!-- ... -->
+  </div>
+
+9. FLEXIBILITY AND EFFICIENCY OF USE
+- Filter pencarian yang fleksibel:
+  <div class="search-filters">
+    <div class="filter-section">
+      <h4>Kategori Perusahaan</h4>
+      <select class="filter-select">
+        <!-- ... -->
+      </select>
+    </div>
+    <!-- More filters -->
+  </div>
+
+10. AESTHETIC AND MINIMALIST DESIGN
+- Struktur yang bersih:
+  <div class="container">
+    <div class="main-content">
+      <!-- Content -->
+    </div>
+  </div>
+- Penggunaan whitespace:
+  <div class="role-selector">
+    <div class="role-header">
+      <h1>Cari Pekerjaan Impian Anda!</h1>
+      <p>Temukan berbagai lowongan kerja terbaru di berbagai bidang dan lokasi</p>
+    </div>
+  </div>
+
+11. HELP AND DOCUMENTATION
+- Label yang jelas:
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" required>
+  </div>
+- Instruksi yang mudah dipahami:
+  <div class="role-header">
+    <h1>Cari Pekerjaan Impian Anda!</h1>
+    <p>Temukan berbagai lowongan kerja terbaru di berbagai bidang dan lokasi</p>
+  </div>
+
+12. USER CONTROL AND FREEDOM
+- Navigasi yang fleksibel:
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">HOME</a>
+      <a href="detail.html">DETAIL</a>
+      <a href="apply.html">APPLY</a>
+    </div>
+  </nav>
+- Filter yang bisa diatur:
+  <div class="search-filters">
+    <button class="apply-filters">Terapkan Filter</button>
+  </div>
+
+Implementasi Konsep IMC dalam Kode:
+
+1. HTML:
+- Struktur yang semantik dan terorganisir
+- Penggunaan tag yang sesuai
+- Hierarki informasi yang jelas
+- Form yang terstruktur
+
+2. CSS:
+- Styling yang konsisten
+- Responsive design
+- Animasi dan transisi
+- Layout yang fleksibel
+- Warna dan tipografi yang terstandar
+
+3. Interaksi:
+- Hover effects
+- Focus states
+- Click feedback
+- Form validation
+- Responsive behavior
+
+4. Navigasi:
+- Menu yang selalu terlihat
+- Hierarki yang jelas
+- Akses yang mudah
+- Konsistensi di semua halaman
+
+5. Form:
+- Label yang jelas
+- Validasi input
+- Feedback visual
+- Struktur yang logis
+
+6. Layout:
+- Grid system
+- Responsive design
+- Whitespace yang baik
+- Hierarki visual yang jelas 
