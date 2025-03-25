@@ -641,3 +641,68 @@ footer {
     margin: 0 auto;
 }
 
+
+/* REGISTRASIIIIIII */
+.logo_daftar{
+    width: 220px;
+    border-radius: 100%;
+}
+
+.container-daftar {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow:  15px 15px 20px rgba(0, 0, 0, 0.5);
+}
+.daftar-section {
+    flex: 1;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+
+.divider {
+    width: 1px;
+    background-color: #eee;
+    margin: 0 20px;
+}
+
+.new-user-section {
+    flex: 1;
+    padding-left: 40px;
+}
+
+/* Required field asterisk */
+label::after {
+    content: " *";
+    color: red;
+}
+
+.link_daftar_perusahaan a{
+    text-decoration: none;
+    color: #2196f3;
+}
