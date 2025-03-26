@@ -427,33 +427,6 @@ nav {
 }
 
 /* APPLY PAGE */
-.application-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.application-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.application-form input, .application-form textarea, .application-form select, .application-form button {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #552619;
-    border-radius: 4px;
-}
-
-.application-form button {
-    background-color: #55679C;
-    color: #FBEAE7;
-    cursor: pointer;
-}
-
-/* messagenya */
-
 .message {
     display: none;
     margin-top: 10px;
@@ -727,7 +700,7 @@ input[type="text"] {
     padding-left: 40px;
 }
 
-/* Required field asterisk */
+/* Required */
 label::after {
     content: " *";
     color: red;
